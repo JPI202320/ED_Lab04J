@@ -11,7 +11,7 @@ class MainTest {
         final var sortedArrayGenerator = Main.getSortedArrayGenerator();
         assertThat(sortedArrayGenerator).isNotNull();
 
-        final Integer[] array = sortedArrayGenerator.generate(10);
+        final String[] array = sortedArrayGenerator.generate(10);
 
         assertThat(array)
                 .isNotNull()
@@ -31,7 +31,7 @@ class MainTest {
         final var invertedArrayGenerator = Main.getInvertedArrayGenerator();
         assertThat(invertedArrayGenerator).isNotNull();
 
-        final Integer[] array = invertedArrayGenerator.generate(10);
+        final String[] array = invertedArrayGenerator.generate(10);
 
         assertThat(array)
                 .isNotNull()
@@ -51,14 +51,14 @@ class MainTest {
         final var randomArrayGenerator = Main.getRandomArrayGenerator();
         assertThat(randomArrayGenerator).isNotNull();
 
-        final Integer[] array = randomArrayGenerator.generate(10);
+        final String[] array = randomArrayGenerator.generate(10);
 
         assertThat(array)
                 .isNotNull()
                 .hasSize(10);
 
-        for (Integer integer : array) {
-            assertThat(integer).isNotNull();
+        for (String s : array) {
+            assertThat(s).isNotNull();
         }
     }
 
@@ -70,7 +70,7 @@ class MainTest {
         final var randomArrayGenerator = Main.getRandomArrayGenerator();
         assertThat(randomArrayGenerator).isNotNull();
 
-        final Integer[] array = randomArrayGenerator.generate(10);
+        final String[] array = randomArrayGenerator.generate(10);
         assertThat(array)
                 .isNotNull()
                 .hasSize(10);
@@ -92,7 +92,7 @@ class MainTest {
         final var randomArrayGenerator = Main.getRandomArrayGenerator();
         assertThat(randomArrayGenerator).isNotNull();
 
-        final Integer[] array = randomArrayGenerator.generate(10);
+        final String[] array = randomArrayGenerator.generate(10);
         assertThat(array)
                 .isNotNull()
                 .hasSize(10);
@@ -114,7 +114,7 @@ class MainTest {
         final var randomArrayGenerator = Main.getRandomArrayGenerator();
         assertThat(randomArrayGenerator).isNotNull();
 
-        final Integer[] array = randomArrayGenerator.generate(10);
+        final String[] array = randomArrayGenerator.generate(10);
         assertThat(array)
                 .isNotNull()
                 .hasSize(10);
