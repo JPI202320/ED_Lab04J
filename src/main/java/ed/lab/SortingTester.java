@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SortingTester<T extends Comparable<T>> {
+public class    SortingTester<T extends Comparable<T>> {
     private static final int ARRAY_SIZE = 10000;
     private static final int TEST_SIZE = 1000;
 
@@ -31,9 +31,10 @@ public class SortingTester<T extends Comparable<T>> {
                 .average()
                 .orElse(0);
 
+
         long sum = durations.stream()
                 .mapToLong(Duration::toMillis)
-                .sum(); // hola
+                .sum();
 
         System.out.printf("\t\tTiempo promedio: %s ms\n", average);
         System.out.println("\t\tSumatoria de tiempo: " + (sum));
